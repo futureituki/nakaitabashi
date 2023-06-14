@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link as Scroll } from 'react-scroll';
 import { navList } from "../../constant/nav"
 import "./index.css"
@@ -11,6 +11,9 @@ export const Navigation:React.FC<Props> = ({ open, setOpen }) => {
   const prev_open = usePrevious(open)
   const CloseStyle = prev_open === true ? 'close-animation' : ''
   const OpenStyle = open === true ? 'open-animation' : ''
+  const handle = () => {
+    setOpen(!open)
+  }
   return (
     <aside className={`${[CloseStyle,OpenStyle,'l-sidebar'].join(' ')}`}>
       <div className="l-sidebar__logo">
@@ -38,7 +41,7 @@ export const Navigation:React.FC<Props> = ({ open, setOpen }) => {
         <ul className="l-list-sp">
           {navList.map((item, index) => (
             <li key={index}>
-                <Scroll to={item.path} smooth={true} onClick={() => setOpen(!open)}>{item.name}</Scroll>
+                <Scroll to={item.path} smooth={true} onClick={handle}>{item.name}</Scroll>
             </li> 
           ))}
         </ul>

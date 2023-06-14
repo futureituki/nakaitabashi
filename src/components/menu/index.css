@@ -12,7 +12,6 @@
   border-bottom: 1px solid #ddd;
   left:0;
   top:0;
-  display:block;
   font-size:1.5rem;
   font-weight:bold;
   width:250px;
@@ -28,6 +27,9 @@
     position: absolute;
     top: 0;
     width: 100%;
+}
+.fixed {
+  overflow:hidden;
 }
 .link {
   display:flex;
@@ -73,6 +75,11 @@
   color: #333;
   text-decoration: none;
 }
+.menu__text {
+  padding:2rem;
+  margin:0;
+  font-size:2rem;
+}
 .l-sidebar__main {
   border-bottom: 1px solid #ddd;
   display:block;
@@ -82,19 +89,19 @@
   padding-top: calc(3.34028vw + 180.55556px);
 }
 .l-list-sp {
-  margin: 30px;
+  margin: 0 2rem;
   padding: 0;
   list-style: none; 
 }
 .l-list-sp li {
-  margin: 1.2rem 0;
+  margin: 1.4rem 0;
   padding: 0;
+  font-size:2.8rem;
   font-weight: bold;
   cursor: pointer;
 }
 .l-list-sp li a {
   display: block;
-  font-size: 1rem;
   font-weight: bold;
   color: #333;
   text-decoration: none;
@@ -105,7 +112,7 @@
   font-size:1.5rem;
   font-weight:bold;
   width:250px;
-  padding-top: calc(3.34028vw + 180.55556px);
+  padding-top: calc(3.34028vw + 200.55556px);
 }
 @keyframes top_in_slide {
   0% {
@@ -136,11 +143,6 @@
     visibility: hidden;
 }
 }
-@media only screen and (min-width: 1081px) {
-  .l-sidebar__main-sp {
-    display:none;
-  }
-}
 @media only screen and (max-width: 1080px) {
   .title {
     display:none;
@@ -155,7 +157,6 @@
     display:block;
   }
   .l-sidebar {
-    overflow: scroll;
     position: fixed;
     padding-top: 84px;
     z-index: 31;
@@ -168,18 +169,36 @@
   }
   .open-animation {
     animation:top_in_slide 0.5s ease-in-out forwards;
+    overflow: hidden;
   }
   .close-animation {
     animation:top_out_slide 0.5s ease-in-out forwards;
   }
 }
 @media only screen and (max-width: 1599px) {
-  .l-sidebar .l-sidebar__logo,  .l-sidebar .l-sidebar__main {
+    .l-sidebar .l-sidebar__main {
     width: calc(4.34028vw + 180.55556px);
+}
+.l-sidebar__logo {
+  display:block;
 }
 }
   @media only screen and (max-width: 1599px) {
-  .l-sidebar__logo, .l-sidebar__main {
+  .l-sidebar__main {
       width: calc(4.34028vw + 180.55556px);
   }
+  }
+  @media only screen and (max-width:1080px) {
+    .l-sidebar__logo {
+      display:none;
+    }
+  }
+  @media only screen and (min-width: 1081px) {
+    .l-sidebar__main-sp {
+      display:none;
+    }
+    .l-sidebar__logo {
+      display:block;
+      width: calc(4.34028vw + 180.55556px);
+    }
   }

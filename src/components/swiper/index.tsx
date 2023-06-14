@@ -26,25 +26,21 @@ export default function SwiperAnimation() {
   >
     <SwiperSlide>
       <img src="/top-1.jpeg" alt="" />
-      <InfoBox catchCopy="交通のべんりさと自然の豊かさを兼ね備えた街
-" title="人との関わりを実感しながら、まちに貢献する。
-地域おこし協力隊1年目、飯塚さんが移住で手にしたもの。"
-description="地域おこし協力隊　飯塚哲さん" />
+      <InfoBox catchCopy="中板橋商店街入り口の門" title="結構でかい看板で、初めてみた時かっこいいと思いました。"
+description="中板橋商店街" />
     </SwiperSlide>
     <SwiperSlide>
         <img src="/top-2.jpeg" alt="" />
-        <InfoBox catchCopy="まちを舞台にファンタジー小説PROJECT
-" title="人との関わりを実感しながら、まちに貢献する。
-地域おこし協力隊1年目、飯塚さんが移住で手にしたもの。"
-description="地域おこし協力隊　飯塚哲さん" />
+        <InfoBox catchCopy="勉強をする時によく利用するモスバーガー" title="
+店員さんがいい人ばかりで、お店の雰囲気が好きです。"
+description="モスバーガー＆カフェ 中板橋駅前店" />
     </SwiperSlide>
     <SwiperSlide>
       <img src="/top-3.jp
 eg" alt="" />
-        <InfoBox catchCopy="まちを舞台にファンタジー小説PROJECT
-" title="人との関わりを実感しながら、まちに貢献する。
-地域おこし協力隊1年目、飯塚さんが移住で手にしたもの。"
-description="地域おこし協力隊　飯塚哲さん" />
+        <InfoBox catchCopy="僕が毎日通る駅の入り口
+" title="いつもお世話になっている駅、質素な雰囲気が好きです。18時から20時の間は、意外と人が多い"
+description="中板橋駅 南口" />
     </SwiperSlide>
   </Swiper>
     // <div>
