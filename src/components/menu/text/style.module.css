@@ -1,0 +1,18 @@
+.menu_text {
+  line-height: 1;
+  padding-left:27px;
+  display:flex;
+  aling-items:center;
+  transform-origin:center;
+  height:46px;
+  font-weight:bold;
+  letter-spacing:0.1em;
+  font-size:1.4rem;
+}
+
+@media only screen and (max-width: 1008px){
+  .menu_text {
+    padding-left: 22px;
+    height: 52px;
+  }
+}

@@ -1,0 +1,9 @@
+.modal__container {
+  max-width:600px;
+  padding:2rem;  
+  z-index:9999;
+  position:absolute;
+}
+.modal__overlay {
+  z-index:999
+}

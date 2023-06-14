@@ -1,0 +1,13 @@
+.App {
+  position:relative;
+  min-height:100vh;
+  height:100%;
+  overflow:hidden;
+}
+.ReactModal__Content {
+  z-index:999;
+}
+.header__title {
+  text-align:center;
+  margin:3rem 0;
+}

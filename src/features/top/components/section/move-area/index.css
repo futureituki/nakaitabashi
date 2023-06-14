@@ -1,0 +1,51 @@
+.move__about-section {
+  border-bottom:1px solid #ccc;
+}
+.move__about-inner {
+  width:90%;
+  margin:0 auto;
+  padding:20px 0 40px 0;
+}
+.move__area {
+  height: 0;
+  padding-top: 56.25%;
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  background-size:cover;
+  cursor: pointer;
+  border-radius:20px;
+  margin:20px auto;
+}
+.move__area-inner {
+  width:85%;
+  margin:0 auto;
+}
+.move__area-start {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:55px;
+  height:55px;
+  background:#fff;
+  z-index:5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+.move__area-start img {
+  width:55px;
+  height:55px;
+}
+.about__area {
+  margin:20px 10px 10px 10px;
+  width:100%;
+}
+.about__area h4 {
+  margin:0 0 20px 0;
+  font-size:1rem;
+  color:#333;
+  letter-spacing:0.03rem;
+}

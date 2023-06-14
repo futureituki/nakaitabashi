@@ -1,0 +1,27 @@
+.item_title h3 {
+  font-size: 2rem;
+  margin: 0.25em 0;
+  text-align:left;
+}
+
+@media only screen and (max-width:600px) {
+  .item_title h3{
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width:1080px) {
+  .item_title h3{
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width:450px) {
+  .item_title h3{
+    font-size: 2rem;
+    margin: 0.25em 0;
+  }
+}
+@media only screen and (min-width:1080px) {
+  .item_title h3{
+    font-size: 3rem;
+  }
+}

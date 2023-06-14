@@ -1,0 +1,40 @@
+.article__section {
+  border-bottom:1px solid #ccc;
+}
+.article__inner {
+  width:90%;
+  margin:0 auto;
+  padding:20px 0 40px 0;
+  max-width:1400px;
+}
+.article__shop {
+  position:relative;
+  width:100%;
+  margin:2rem 0 8rem 0;
+  transition: all .5s ease-out;
+}
+.opacity {
+  opacity:1;
+}
+.article__shop img {
+  border-radius:20px;
+}
+.gallery__container {
+  display:flex;
+  gap:2rem;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin:2rem 0;
+}
+.gallery__box {
+  width:20vw;
+  max-width:300px;
+}
+.gallery__box img{
+  width:100%;
+}
+@media screen and (max-width: 500px) {
+  .gallery__box {
+    width:100%;
+  }
+}
