@@ -197,7 +197,7 @@
     .l-sidebar__main-sp {
       display:none;
     }
-    .l-sidebar__logo {
+    .l-sidebar .l-sidebar__logo {
       display:block;
       width: calc(4.34028vw + 180.55556px);
     }
